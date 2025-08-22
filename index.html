@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de Pós-Graduação - Segurança da Informação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f2f5;
+        }
+        .container {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .card-custom {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .btn-custom {
+            background-color: #28a745;
+            border-color: #28a745;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+        .video-container {
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .pdf-viewer-container {
+            height: 70vh; /* Ajuste a altura para que o PDF se ajuste bem na tela */
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="text-center mb-5">
+            <h1 class="display-4">Trabalho de Pós-Graduação</h1>
+            <p class="lead text-muted"> Ethical Hacking e Cybersecurity - UNIESP/PB</p>
+            <hr class="my-4">
+            Os ataques cibernéticos estão cada vez mais sofisticados, explorando vulnerabilidades
+técnicas e falhas humanas. <p> Conhecer as ameaças é essencial para proteger dados e a
+reputação da empresa
+        </div>
+
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-10">
+                <div class="card card-custom">
+                    <div class="card-header text-center">
+                        <h5> Hardening em Ambientes Windows</h5>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="pdf-viewer-container">
+                            <iframe src="assets//ciberseguranca_apresentação.pdf" width="100%" height="100%" style="border: none;"></iframe>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="assets//ciberseguranca_apresentação.pdf" download class="btn btn-custom btn-lg w-75">Baixar o Documento PDF</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card card-custom h-100">
+                    <div class="card-header text-center">
+                        <h5>Ataque 1</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <p class="card-text">Malwarebytes Brute Forte Protection ( Ataque de força bruta) <p>Autor : Tisec Tecnologia.</p>
+                        <div class="video-container ratio ratio-16x9 mb-3">
+                            <video src="assets/video1.mp4" controls class="rounded"></video>
+                        </div>
+                        <div class="text-center mt-auto">
+                            <a href="assets/video1.mp4" download class="btn btn-custom btn-lg w-100">Baixar Vídeo 1</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card card-custom h-100">
+                    <div class="card-header text-center">
+                        <h5>Ataque 2 </h5>
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <p class="card-text">Quebrando Senha Windows Server 2012 <p> Autor: Vicente F. Cardoso.</p>
+                        <div class="video-container ratio ratio-16x9 mb-3">
+                            <video src="assets/video2.mp4" controls class="rounded"></video>
+                        </div>
+                        <div class="text-center mt-auto">
+                            <a href="assets/video2.mp4" download class="btn btn-custom btn-lg w-100">Baixar Vídeo 2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
